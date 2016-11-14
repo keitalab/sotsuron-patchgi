@@ -1,0 +1,31 @@
+\documentclass[11pt]{jsarticle}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[top=25.4truemm,bottom=25.4truemm,left=25.4truemm,right=25.4truemm]{geometry}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+\setstretch{1.5}
+
+\titleformat{\section}{\normalfont\fontsize{24pt}{48pt}\mdseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\fontsize{16pt}{32pt}\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\fontsize{16pt}{32pt}\bfseries}{\thesubsubsection}{1em}{}
+
+\renewcommand{\thesection}{第 \arabic{section} 章}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+
+\let\oldsection\section
+\renewcommand\section{\clearpage\oldsection}
+
+\let\oldtableofcontents\tableofcontents
+\renewcommand\tableofcontents{\clearpage\oldtableofcontents}
+
+\setcounter{tocdepth}{3}
+
+\begin{document}
+
+\tableofcontents
+
+\input body.tex
+
+\end{document}
