@@ -61,7 +61,7 @@ $ make build open clean
 
 Markdownから変換する場合はこれをbuildの前に追加する。
 
-``bash
+```bash
 $ make convert
 ```
 
