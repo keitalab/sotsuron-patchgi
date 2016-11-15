@@ -37,6 +37,12 @@ tlmgrというのが、パッケージマネージャ的なやつ。
 $ sudo tlmgr install titlesec setspace
 ```
 
+### Markdownから変換する
+
+```
+$ brew install pandoc
+```
+
 ### テンプレートのビルド(PDFの生成)
 
 Makefileがあるので、基本的にこれを使えばOK。
@@ -51,6 +57,12 @@ $ make clean
 
 ```bash
 $ make build open clean
+```
+
+Markdownから変換する場合はこれをbuildの前に追加する。
+
+``bash
+$ make convert
 ```
 
 ## 卒論を書く
