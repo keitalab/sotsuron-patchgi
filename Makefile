@@ -10,7 +10,8 @@ convert: download
 	sed -ie 's/includegraphics/includegraphics[width=\\textwidth,height=5cm,keepaspectratio]/g' body.tex
 	cat body.tex \
 	| grep -o 'images/[^}]*' \
-	| xargs -I{} /bin/bash -c 'sed -ie "s|\\\begin{figure}|\\\begin{figure}[h]|g" body.tex; sed -ie "s|\\\end|\\\label{fig:`basename {}`}\\\end|g" body.tex'
+	| xargs -I{} /bin/bash -c 'sed -ie "s|\\\end|\\\label{fig:`basename {}`}\\\end|g" body.tex'
+	sed -ie "s|\\\begin{figure}|\\\begin{figure}[h]|g" body.tex
 
 build:
 	platex temp.tex && dvipdfmx temp
