@@ -8,7 +8,11 @@
 
 目的があるんだよなあ。(図\ref{fig:832df7abe16316dd63d148a41f11614f.png})
 
+２つあるんだよなあ(図\ref{fig:27ef3343693d4507c6edf779d02da446.png})
+
 ![いらすとや](images/832df7abe16316dd63d148a41f11614f.png)
+
+![あああ](images/27ef3343693d4507c6edf779d02da446.png)
 
 ### ぴよぴよ
 
